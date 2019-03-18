@@ -15,8 +15,8 @@ class CreateExperiment extends Component{
         );
     }
 
-    onBtnClick(){
-        window.alert("Hey Whatsup!!!");
+    onBtnClick(e){
+        console.log(">>>>"+e)
     }
 }
 
