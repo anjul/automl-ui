@@ -10,6 +10,7 @@ class CreateExperiment extends Component{
                 <StepsComps id="stepsComps" />
                 <StepsComps id="stepsComps" />
                 <StepsComps id="stepsComps" />
+                <StepsComps id="stepsComps" />
             </div>
             
         );

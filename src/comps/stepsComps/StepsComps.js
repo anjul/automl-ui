@@ -23,7 +23,7 @@ function StepsComps(props) {
 
     return(
         <div>
-            <h3>Select Variables</h3>
+            <b>Select Variables:</b>
             <Fab size="small" color="primary" aria-label="Edit" className={classes.fab}>
                 <EditIcon />
             </Fab>
