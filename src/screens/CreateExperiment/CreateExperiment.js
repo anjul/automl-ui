@@ -1,22 +1,18 @@
 import React, {Component} from 'react';
-import Button from '@material-ui/core/Button';
 import './CreateExperiment.css'
+import List from '@material-ui/core/List';
+import StepsComps from '../../comps/stepsComps/StepsComps';
 
 class CreateExperiment extends Component{
     render(){
         return(
-            <div className="CreateExperiment">
-            <header className="CreateExperiment-header">
-            <Button variant="contained" color="primary" onClick={this.onBtnClick}>
-                Click Me!!!
-            </Button>
-            </header>
+            <div>
+                <StepsComps id="stepsComps" />
+                <StepsComps id="stepsComps" />
+                <StepsComps id="stepsComps" />
             </div>
+            
         );
-    }
-
-    onBtnClick(e){
-        console.log(">>>>"+e)
     }
 }
 

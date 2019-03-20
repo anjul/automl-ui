@@ -1,33 +1,41 @@
-import React from 'react';;
+import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles, MuiThemeProvider } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import { Typography } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+import Fab from '@material-ui/core/Fab';
+import EditIcon  from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
+import './StepsComps.css';
 
-const styles = thems => ({
-    root: {
-        ...theme.mixins.gutters(),
-        paddingTop: theme.spacing.unit *2,
-        paddingBottom: theme.spacing.unit *2,
-    };
+const styles = theme => ({
+    root:{
+        flex: 2,
+    },
+    fab: {
+        margin: theme.spacing.unit,
+    },
+    extendedIcon: {
+        marginRight: theme.spacing.unit,
+      },
 });
 
-function PaperSheet(props) {
-    const { classes } =props
+function StepsComps(props) {
+    const {classes} = props;
 
-    return (
+    return(
         <div>
-            <Paper className={classes.root} elevation={1}>
-                <Typography variant="h5" component="h3">
-                Select variables
-                </Typography>
-            </Paper>
+            <h3>Select Variables</h3>
+            <Fab size="small" color="primary" aria-label="Edit" className={classes.fab}>
+                <EditIcon />
+            </Fab>
+            <Fab size="small" color="secondary" aria-label="Delete" className={classes.fab}>
+                <DeleteIcon />
+            </Fab>
         </div>
     );
 }
 
-PaperSheet.PropTypes = {
-    classes: PropType.object.isRequired
+StepsComps.propTypes = {
+    classes: PropTypes.object.isRequired,
 };
 
-expot default withStyles(styles)(PaperSheet);
+export default withStyles(styles)(StepsComps);
