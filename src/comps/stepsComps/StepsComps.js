@@ -4,7 +4,9 @@ import { withStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import EditIcon  from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
+import BackgroundCard from '../../comps/BackgroundCard.jsx';
 import './StepsComps.css';
+import { CardContent } from '@material-ui/core';
 
 const styles = theme => ({
     root:{
@@ -23,15 +25,27 @@ function StepsComps(props) {
 
     return(
         <div>
-            <b>Select Variables:</b>
-            <Fab size="small" color="primary" aria-label="Edit" className={classes.fab}>
-                <EditIcon />
-            </Fab>
-            <Fab size="small" color="secondary" aria-label="Delete" className={classes.fab}>
-                <DeleteIcon />
-            </Fab>
+            <BackgroundCard>
+                <CardContent>
+                    <b>{props.label}:</b>
+                    <Fab size="small" color="primary" aria-label="Edit" className={classes.fab} onClick={onEditBtn}>
+                        <EditIcon />
+                    </Fab>
+                    <Fab size="small" color="secondary" aria-label="Delete" className={classes.fab} onClick={onDelBtn}>
+                        <DeleteIcon />
+                    </Fab>
+                </CardContent>
+            </BackgroundCard>
         </div>
     );
+}
+
+function onEditBtn(){
+    window.alert("clicked edit")
+}
+
+function onDelBtn(){
+    window.alert("clicked del")
 }
 
 StepsComps.propTypes = {

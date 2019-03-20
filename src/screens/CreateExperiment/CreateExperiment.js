@@ -6,11 +6,11 @@ import StepsComps from '../../comps/stepsComps/StepsComps';
 class CreateExperiment extends Component{
     render(){
         return(
-            <div>
-                <StepsComps id="stepsComps" />
-                <StepsComps id="stepsComps" />
-                <StepsComps id="stepsComps" />
-                <StepsComps id="stepsComps" />
+            <div className="stepsCompsDiv">
+                <StepsComps id="stepsComps" label="Select Variables" />
+                <StepsComps id="stepsComps" label="Explore Variables"/>
+                <StepsComps id="stepsComps" label="Select Transformation"/>
+                <StepsComps id="stepsComps" label="Configure Test & Validation"/>
             </div>
             
         );
