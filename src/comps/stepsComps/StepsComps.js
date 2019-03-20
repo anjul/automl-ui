@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import EditIcon  from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
-import BackgroundCard from '../../comps/BackgroundCard.jsx';
+import BackgroundCard from '../BackgroundCard.js';
 import './StepsComps.css';
 import { CardContent } from '@material-ui/core';
 
