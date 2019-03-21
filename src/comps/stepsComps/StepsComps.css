@@ -1,7 +1,8 @@
 .stepDiv{
     border-radius: 10px;
-    border-color: black;
-    border: 5px;
+    border: 5px solid black;
     background: #adbbe756;
     margin-bottom: 10px;
+    padding-left: 10px;
+    place-content:;
 }

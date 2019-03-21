@@ -22,9 +22,9 @@ function StepsComps(props) {
     const {classes} = props;
 
     return(
-        <div className="stepDiv row">
+        <div className="stepDiv row border border-dark">
             
-            <div className="pull-left"><b>{props.label}:**</b></div>
+            <div class="d-flex flex-wrap align-content-center"><b>{props.label}</b></div>
 
             <div className="pull-right"><Fab size="small" color="primary" aria-label="Edit" 
             className={classes.fab} onClick={onEditBtn}>
