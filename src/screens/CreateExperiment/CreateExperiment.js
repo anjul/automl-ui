@@ -14,7 +14,9 @@ class CreateExperiment extends Component{
         }
 
         return(
+            
             <div id="stepsDiv" >
+            <h2>Create Experiment</h2>
                {steps}
             </div>    
         );

@@ -10,7 +10,7 @@ const style = {
     },
 }
 
-function SimpleCard(props){
+function BackgroundCard(props){
     const {classes} = props;
 
     return (
@@ -20,7 +20,7 @@ function SimpleCard(props){
     );
 }
 
-BackgroundCard.PropTypes = {
+BackgroundCard.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 

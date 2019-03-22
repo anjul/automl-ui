@@ -5,6 +5,9 @@ import Fab from '@material-ui/core/Fab';
 import EditIcon  from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import './StepsComps.css';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
 
 const styles = theme => ({
     root:{
@@ -16,26 +19,31 @@ const styles = theme => ({
     extendedIcon: {
         marginRight: theme.spacing.unit,
       },
+      card: {
+        minWidth: 275,
+      },
 });
 
 function StepsComps(props) {
     const {classes} = props;
 
     return(
-        <div className="stepDiv row border border-dark">
-            
-            <div class="d-flex flex-wrap align-content-center"><b>{props.label}</b></div>
-
-            <div className="pull-right"><Fab size="small" color="primary" aria-label="Edit" 
-            className={classes.fab} onClick={onEditBtn}>
-                <EditIcon />
-            </Fab>
-
-            <Fab size="small" color="secondary" aria-label="Delete" 
-            className={classes.fab} onClick={onDelBtn}>
-                <DeleteIcon />
-            </Fab></div>
-
+        <div className="stepDiv row">
+            <Card className={classes.card}>
+                <CardContent>
+                    <div className="pull-right">
+                        <Fab size="small" color="primary" aria-label="Edit" className={classes.fab} onClick={onEditBtn}>
+                            <EditIcon />
+                        </Fab>
+                        <Fab size="small" color="secondary" aria-label="Delete" className={classes.fab} onClick={onDelBtn}>
+                            <DeleteIcon />
+                        </Fab>
+                    </div>
+                    <div>
+                        <b>{props.label}</b>
+                    </div>
+                </CardContent>
+            </Card>
         </div>
     );
 }
