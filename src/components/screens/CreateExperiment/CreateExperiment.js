@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './CreateExperiment.css'
-import StepsComps from '../../comps/stepsComps/StepsComps';
+import StepsComps from '../../stepsComp/StepsComps'
+
 
 class CreateExperiment extends Component{
     

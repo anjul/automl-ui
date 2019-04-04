@@ -6,7 +6,6 @@ import EditIcon  from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import './StepsComps.css';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 
 const styles = theme => ({

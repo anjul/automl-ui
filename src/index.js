@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
-import CreateExperiment from './screens/CreateExperiment/CreateExperiment'
+import CreateExperiment from './components/screens/CreateExperiment/CreateExperiment'
 import * as serviceWorker from './serviceWorker';
 
 //ReactDOM.render(<App />, document.getElementById('root'));
